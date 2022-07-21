@@ -191,7 +191,7 @@ async function renderFeed() {
 
 async function renderProfile() {
     const profile = document.createElement('section');
-    
+
     main.appendChild(profile);
 
     let username = localStorage.getItem('username');
@@ -223,6 +223,7 @@ async function renderProfile() {
             howOfteninput.setAttribute('class', 'form-select border-secondary rounded')
 
             howOfteninput.appendChild(dailyChoice)
+            howOfteninput.setAttribute('class', 'container')
             profile.appendChild(howOftenText)
             profile.appendChild(howOfteninput)
 
