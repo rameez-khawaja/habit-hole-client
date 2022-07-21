@@ -63,6 +63,9 @@ function currentUser(){
 }
 
 function renderHomepage(){
+    if(currentUser()){
+        location.hash = '#profile';
+    }
     const homepage = document.createElement('div');
     homepage.innerHTML = `<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
     <div class="d-flex flex-row">
