@@ -191,12 +191,7 @@ async function renderFeed() {
 
 async function renderProfile() {
     const profile = document.createElement('section');
-    const greeting = document.createElement('h3');
-    let name = `${localStorage.getItem('username')}`
-    const capitalisedName = name.charAt(0).toUpperCase() + name.slice(1);
-    greeting.textContent = `Hi there, ${capitalisedName}!`
-    greeting.setAttribute('class', 'mb-5');
-    profile.appendChild(greeting);
+    
     main.appendChild(profile);
 
     let username = localStorage.getItem('username');
@@ -209,6 +204,12 @@ async function renderProfile() {
         }
         const r = await fetch(`https://habit-hole.herokuapp.com/habits/fetchUsername`, options)
         const postData = await r.json()
+        const greeting = document.createElement('h3');
+        let name = `${localStorage.getItem('username')}`
+        const capitalisedName = name.charAt(0).toUpperCase() + name.slice(1);
+        greeting.textContent = `Hi there, ${capitalisedName}!`
+        greeting.setAttribute('class', 'mb-5');
+        profile.appendChild(greeting);
         if (postData.sleeptarget == null){
             const form = document.createElement('form')
 
@@ -280,10 +281,10 @@ async function renderProfile() {
 
                 form.appendChild(howManyHours)
                 linebreak = document.createElement("br");
-            form.appendChild(linebreak);
+                form.appendChild(linebreak);
                 form.appendChild(inputSleepTarget)
                 linebreak = document.createElement("br");
-            form.appendChild(linebreak);
+                form.appendChild(linebreak);
                 form.appendChild(button)
                 profile.appendChild(form)
                 profile.setAttribute('class', 'shadow-lg p-4 p-md-5 mb-4 text-white rounded bg-secondary');
@@ -306,14 +307,19 @@ async function renderProfile() {
                     tryHarder.textContent = `You should be more mindful of your sleep time.`
                     const zeroStreak = document.createElement('h3')
                     zeroStreak.textContent = `You currently have a 0 day hot-streak.`
-                    const linebreak = document.createElement("br");
                     const sadFace = document.createElement('img')
                     sadFace.setAttribute('src', './static/images/sad.jpg')
                     sadFace.setAttribute('class', 'rounded-circle w-25 h-25')
                     profile.appendChild(tryHarder)
+                    profile.appendChild(document.createElement("br"));
                     profile.appendChild(zeroStreak)
-                    profile.appendChild(linebreak);
+                    profile.appendChild(document.createElement("br"));
+                    profile.appendChild(document.createElement("br"));
+                    profile.appendChild(document.createElement("br"));
                     profile.appendChild(sadFace)
+                    profile.appendChild(document.createElement("br"));
+                    profile.appendChild(document.createElement("br"));
+                    profile.appendChild(document.createElement("br"));
                     profile.setAttribute('class', 'shadow-lg p-4 p-md-5 mb-4 text-white rounded bg-danger');
                 }
                 else {
@@ -460,6 +466,8 @@ function render404() {
     errorImage.src = './static/images/sad-bunny.png';
     errorImage.setAttribute('alt', 'sad-bunny')
     errorImage.setAttribute('class', 'award')
+    main.appendChild(document.createElement("br"));
+    main.appendChild(document.createElement("br"));
     main.appendChild(error);
     main.appendChild(document.createElement('br'));
     main.appendChild(document.createElement('br'));
