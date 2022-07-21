@@ -223,9 +223,11 @@ async function renderProfile() {
             howOfteninput.setAttribute('class', 'form-select border-secondary rounded')
 
             howOfteninput.appendChild(dailyChoice)
-            howOfteninput.setAttribute('class', 'container')
+            howOfteninputdiv = document.createElement('div')
+            howOfteninputdiv.setAttribute('class', 'container w-50')
+            howOfteninputdiv.appendChild(howOfteninput)
             profile.appendChild(howOftenText)
-            profile.appendChild(howOfteninput)
+            profile.appendChild(howOfteninputdiv)
 
             const howManyHours = document.createElement('h3')
             howManyHours.textContent = "How many hours do you want to sleep per night?"
