@@ -456,7 +456,16 @@ function Dashboard(postData, username) {
 function render404() {
     const error = document.createElement('h2');
     error.textContent = "Oops, we can't find that page sorry!";
+    let errorImage = document.createElement('img')
+    errorImage.src = './static/images/sad-bunny.png';
+    errorImage.setAttribute('alt', 'sad-bunny')
+    errorImage.setAttribute('class', 'award')
     main.appendChild(error);
+    main.appendChild(document.createElement('br'));
+    main.appendChild(document.createElement('br'));
+    main.appendChild(document.createElement('br'));
+    main.appendChild(document.createElement('br'));
+    main.appendChild(errorImage);
 }
 
 async function getAllHabits(){
