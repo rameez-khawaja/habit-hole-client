@@ -486,6 +486,7 @@ function updateNav(){
         logoutBtn = document.createElement('a');
         logoutBtn.textContent = 'Logout';
         logoutBtn.setAttribute('class', 'nav-link text-light')
+        logoutBtn.setAttribute('href', '#')
         logoutBtn.onclick = logout;
         nav.appendChild(logoutBtn);
     } else {

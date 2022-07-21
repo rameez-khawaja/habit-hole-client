@@ -7,19 +7,6 @@ body {
     font-weight: bold;
 }
 
-nav {
-    justify-content: space-between;
-}
-
-/* nav button, input[type='submit'] {
-    border: none;
-    color: white;
-    background: black;
-    font-weight: inherit;
-    font-size: inherit;
-    padding: 2;
-} */
-
 #feed {
     width: 50%;
     margin: 20px auto;
