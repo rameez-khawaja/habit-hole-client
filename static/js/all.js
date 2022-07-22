@@ -84,7 +84,7 @@ function renderHomepage(){
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Health & Fitness</strong>
+          <strong class="d-inline-block mb-2" style="color:#003153">Health & Fitness</strong>
           <h3 class="mb-0">Benefits of tracking your sleep</h3>
           <div class="mb-2 mt-2">July 18</div>
           <p class="card-text mb-auto mt-2">Decreased risk of serious medical conditions.</p>
@@ -99,17 +99,17 @@ function renderHomepage(){
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Company News</strong>
+          <strong class="d-inline-block mb-2" style="color:#003153">Company News</strong>
           <h3 class="mb-0">habit-hole</h3>
           <div class="mb-1 mt-2">July 18</div>
           <p class="mb-auto mt-1">Habit hole is an app developed to help users track their sleep patterns, compare their own historical sleep data and improve their quality of life.</p>
           <p class="mb-auto mt-2">This application was designed and developed by 3 full-stack engineers working as part of the futureproof training programme.</p>
           <div class="d-flex bd-highlight my-2">
           <div class="p-2 flex-fill bd-highlight">
-          <a href="https://github.com/uzair14" class="text-decoration-none" target="_blank">Uzair <i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/uzair14" class="text-decoration-none" target="_blank" style="color:#0018a8">Uzair <i class="fa-brands fa-github"></i></a>
           </div>
-          <div class="p-2 flex-fill bd-highlight"><a href="https://github.com/rameez-khawaja" class="text-decoration-none" target="_blank">Rameez <i class="fa-brands fa-github"></i></a></div>
-          <div class="p-2 flex-fill bd-highlight"><a href="https://github.com/eheath30" class="text-decoration-none" target="_blank">Elliot <i class="fa-brands fa-github"></i></a></div>
+          <div class="p-2 flex-fill bd-highlight"><a href="https://github.com/rameez-khawaja" class="text-decoration-none" target="_blank" style="color:#0018a8">Rameez <i class="fa-brands fa-github"></i></a></div>
+          <div class="p-2 flex-fill bd-highlight"><a href="https://github.com/eheath30" class="text-decoration-none" target="_blank" style="color:#0018a8">Elliot <i class="fa-brands fa-github"></i></a></div>
         </div>
         </div>
       </div>
