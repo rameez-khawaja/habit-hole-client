@@ -101,8 +101,8 @@ function renderHomepage(){
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-primary">Company News</strong>
           <h3 class="mb-0">habit-hole</h3>
-          <div class="mb-1 text-muted mt-2">July 18</div>
-          <p class="mb-auto mt-1">Habit hole is an app developed to help users track their sleep patterns, compare their own historial sleep data and improve their quality of life.</p>
+          <div class="mb-1 mt-2">July 18</div>
+          <p class="mb-auto mt-1">Habit hole is an app developed to help users track their sleep patterns, compare their own historical sleep data and improve their quality of life.</p>
           <p class="mb-auto mt-2">This application was designed and developed by 3 full-stack engineers working as part of the futureproof training programme.</p>
           <div class="d-flex bd-highlight my-2">
           <div class="p-2 flex-fill bd-highlight">
