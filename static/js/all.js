@@ -86,7 +86,7 @@ function renderHomepage(){
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-success">Health & Fitness</strong>
           <h3 class="mb-0">Benefits of tracking your sleep</h3>
-          <div class="mb-2 text-muted mt-2">July 18</div>
+          <div class="mb-2 mt-2">July 18</div>
           <p class="card-text mb-auto mt-2">Decreased risk of serious medical conditions.</p>
           <p class="card-text mb-auto mt-2">Improved mood.</p>
           <p class="card-text mb-auto mt-2">Better cognitive functioning.</p>
